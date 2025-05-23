@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teknea | Aprende Programación Online</title>
+  <meta name="description" content="Cursos online de programación con mentores expertos, proyectos reales y comunidad activa. ¡Impulsa tu carrera digital con Teknea!">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2721/2721269.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .parallax-hero {
+      background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      min-height: 80vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .company-logos img { max-height: 40px; margin: 0 16px; opacity: 0.7; }
+    .social-icons a { color: #fff; margin: 0 8px; font-size: 1.5rem; }
+    .faq-question { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <!-- Menú de navegación fijo -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Teknea</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#registro">Registro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero/Slider -->
+  <header class="parallax-hero" id="hero">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-3">Impulsa tu carrera digital con Teknea</h1>
+      <p class="lead mb-4">Aprende programación online con mentores expertos, proyectos reales y una comunidad activa.</p>
+      <a href="#registro" class="btn btn-lg btn-warning fw-semibold shadow">¡Comienza gratis!</a>
+    </div>
+  </header>
+
+  <!-- Logos de empresas colaboradoras -->
+  <section class="py-3 bg-light company-logos text-center">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center">
+      <span class="me-3 text-secondary">Nuestros alumnos trabajan en:</span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Google_Logo.svg" alt="Google" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_Telefónica_2021.svg" alt="Telefónica" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Logo_Banco_Santander.svg" alt="Santander" />
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="py-5" id="beneficios">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 fade-in">¿Por qué aprender con Teknea?</h2>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-2">Metodología Práctica</h5>
+              <p class="card-text">Aprende haciendo, con proyectos reales y retroalimentación constante.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-2">Mentores Expertos</h5>
+              <p class="card-text">Profesionales activos que comparten su experiencia del mundo real.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-2">Comunidad Activa</h5>
+              <p class="card-text">Aprende en grupo, pregunta, colabora y crece con otros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursos -->
+  <section class="py-5 bg-light" id="cursos">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 fade-in">Cursos Destacados</h2>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-2">Fundamentos de Programación</h5>
+              <p class="card-text">Ideal para comenzar desde cero y entender la lógica del código.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-2">Python para Principiantes</h5>
+              <p class="card-text">Curso completo con ejercicios prácticos y proyectos reales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-2">Desarrollo Web Full Stack</h5>
+              <p class="card-text">Desde HTML hasta bases de datos y APIs, aprende todo el stack.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#registro" class="btn btn-outline-primary">Ver todos los cursos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios (carrusel) -->
+  <section class="py-5" id="testimonios">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 fade-in">Lo que dicen nuestros estudiantes</h2>
+      <div id="testimonialCarousel" class="carousel slide mx-auto fade-in" data-bs-ride="carousel" style="max-width:600px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="blockquote">
+              <p>"Gracias a Teknea conseguí mi primer trabajo remoto como programador. ¡Más que recomendado!"</p>
+              <footer class="blockquote-footer mt-2">Camila G., Chile</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p>"Los mentores realmente se preocupan por tu aprendizaje. La comunidad es increíble."</p>
+              <footer class="blockquote-footer mt-2">Luis M., México</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p>"Me encantó la metodología práctica. Aprendí mucho más rápido que en otros cursos."</p>
+              <footer class="blockquote-footer mt-2">Sofía R., España</footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-5 bg-light" id="faq">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 fade-in">Preguntas Frecuentes</h2>
+      <div class="accordion fade-in" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              ¿Necesito experiencia previa para comenzar?
+            </button>
+          </h2>
+          <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No, nuestros cursos están diseñados para principiantes y también para quienes buscan profundizar sus conocimientos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+              ¿Recibo un certificado al finalizar?
+            </button>
+          </h2>
+          <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sí, al completar cada curso obtendrás un certificado digital avalado por Teknea.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+              ¿Cómo accedo a los mentores?
+            </button>
+          </h2>
+          <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Puedes contactar a los mentores a través de la plataforma y en sesiones grupales semanales.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario de registro -->
+  <section class="py-5" id="registro">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 fade-in">
+          <h2 class="fw-bold mb-3">Empieza hoy a construir tu futuro digital</h2>
+          <p class="mb-4">Regístrate gratis y accede a todos los recursos de Teknea.</p>
+          <form id="signupForm" class="bg-light p-4 rounded shadow-sm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Crear cuenta gratuita</button>
+          </form>
+          <div id="signupMsg" class="alert alert-success mt-3 d-none">¡Registro exitoso! Revisa tu correo.</div>
+        </div>
+        <div class="col-lg-6 text-center fade-in">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Estudiantes Teknea" class="img-fluid rounded shadow" style="max-height:320px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redes sociales -->
+  <section class="bg-primary py-3">
+    <div class="container text-center social-icons">
+      <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <span class="ms-3 text-white-50">Síguenos en redes sociales</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="#" class="text-light me-3">Sobre nosotros</a>
+        <a href="#" class="text-light me-3">Contacto</a>
+        <a href="#" class="text-light me-3">Blog</a>
+        <a href="#" class="text-light me-3">Política de privacidad</a>
+        <a href="#" class="text-light">Términos de uso</a>
+      </div>
+      <div class="small">&copy; 2025 Teknea. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, Bootstrap Icons y animaciones -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animaciones fade-in al hacer scroll
+    function revealOnScroll() {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+
+    // Formulario de registro (simulado)
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('signupMsg').classList.remove('d-none');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
